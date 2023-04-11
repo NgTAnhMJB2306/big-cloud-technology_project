@@ -101,18 +101,20 @@ var swiper = new Swiper(".logo-slider", {
     loop: true,
     grabCursor: true,
     spaceBetween: 10,
+    slidesToScroll: 1,
+    autoplay: true,
     breakpoints: {
         0: {
-            slidesPerView: 1,
-        },
-        450: {
             slidesPerView: 2,
         },
-        768: {
+        450: {
             slidesPerView: 3,
         },
-        991: {
+        768: {
             slidesPerView: 4,
+        },
+        991: {
+            slidesPerView: 5,
         },
     },
 });
